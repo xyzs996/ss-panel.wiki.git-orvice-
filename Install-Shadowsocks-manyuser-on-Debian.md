@@ -16,7 +16,9 @@ python server.py  
 
 ### 使用supervisor进程守护
 ```
+# 安装supervisor
 apt-get install python-pip python-m2crypto supervisor
+# 编辑文件
 vim /etc/supervisor/conf.d/shadowsocks.conf 
 ```
 输入(dir路径记得修改)
