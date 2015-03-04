@@ -57,4 +57,10 @@ debug查看日志
 supervisorctl tail -f shadowsocks stderr
 ```
 
+启动/重启/停止
+
+```
+supervisorctl start/restart/stop shadowsocks  
+```
+
 
