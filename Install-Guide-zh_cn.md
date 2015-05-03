@@ -15,7 +15,7 @@
 * 将 lib/config-sample.php 重命名为 config.php，并编辑数据库信息.
 * 上传整个目录
 
-### Admin
+### 后台
 * 默认情况下，user表中uid为1的用户为管理员
 * 添加管理员可以在 'ss_user_admin' 表中添加用户UID
 
