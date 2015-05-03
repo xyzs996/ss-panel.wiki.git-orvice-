@@ -19,8 +19,8 @@
 * The user who uid is 1 is Admin by default.
 * You can Add User ID into table 'ss_user_admin'
 
-### Send mail using mail-gun
-Run:
+### 安装各种依赖
+ssh到vps下，cd到网站目录，执行如下命令:
 
 ```
 $ curl -sS https://getcomposer.org/installer | php
