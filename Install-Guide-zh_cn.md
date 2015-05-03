@@ -6,14 +6,14 @@
 如果你原来版本是0.X 请查阅 
 [Read this](https://github.com/orvice/ss-panel/blob/master/upgrade_to_v2.md)
 
-### Requirements
+### 系统要求
 * PHP >= 5.4
 * PDO Extension
 
-### Install
-* Import sql/*.sql to your MySQL Database
-* Rename lib/config-sample.php to config.php,and edit the database infomation.
-* Enjoy it.
+### 安装
+* 导入sql目录下的所有sql文件到数据库
+* 将 lib/config-sample.php 重命名为 config.php，并编辑数据库信息.
+* 上传整个目录
 
 ### Admin
 * The user who uid is 1 is Admin by default.
