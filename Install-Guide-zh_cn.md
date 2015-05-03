@@ -16,8 +16,8 @@
 * 上传整个目录
 
 ### Admin
-* The user who uid is 1 is Admin by default.
-* You can Add User ID into table 'ss_user_admin'
+* 默认情况下，user表中uid为1的用户为管理员
+* 添加管理员可以在 'ss_user_admin' 表中添加用户UID
 
 ### 安装各种依赖
 ssh到vps下，cd到网站目录，执行如下命令:
