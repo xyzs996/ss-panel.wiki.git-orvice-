@@ -10,6 +10,10 @@
 * PHP >= 5.4
 * PDO Extension
 
+### 下载
+
+请从发布页面下载  https://github.com/orvice/ss-panel/releases
+
 ### 安装
 * 导入sql目录下的所有sql文件到数据库
 * 将 lib/config-sample.php 重命名为 config.php，并编辑数据库信息.
