@@ -18,3 +18,15 @@ config/app.php
 config/db.php
 ```
 
+#### Auth Driver 认证设置
+
+ss-panel v3支持多种存续用户认证信息的方式，区别如下：
+
+* cookie 同v2的认证方式，不推荐。
+* cookie2 强制有效期的cookie认证，有缺陷。
+* redis 使用Redis存储，推荐此方式。
+* session  php session存储
+* db  存储于数据库，安全但是效率不高
+
+推荐使用redis
+
