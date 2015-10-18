@@ -1,1 +1,1 @@
-### About
+[Home](https://github.com/orvice/ss-panel)
