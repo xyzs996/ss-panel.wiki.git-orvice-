@@ -1,1 +1,1 @@
-[Home](https://github.com/orvice/ss-panel)
+[Home](https://github.com/orvice/ss-panel) | [Releases](https://github.com/orvice/ss-panel/releases)
