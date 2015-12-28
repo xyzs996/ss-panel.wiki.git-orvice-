@@ -4,10 +4,7 @@ ss-panel v3 配置说明，请根据说明合理选择密码加密方式，认�
 
 修改站点以及数据库配置
 ```
-config/app.php    // 站点大部分配置都在这里
-config/db.php     // 数据库连接时间
-config/mail.php   // 邮件设置，支持mailgun和smtp
-config/redis.php  // Reids设置，默认安装配置，如果没有使用Redis作为认证方式，无需修改。
+vim .env
 ```
 
 ### Auth Driver 认证设置
