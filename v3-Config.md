@@ -16,6 +16,11 @@ ss-panel v3支持多种存储用户认证信息的方式：
 
 推荐使用redis
 
+#### 安装Redis
+```
+apt-get install redis-server
+```
+
 ### 密码加密方式
 
 * md5 不推荐
