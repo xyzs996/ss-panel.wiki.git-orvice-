@@ -38,3 +38,8 @@ php xcat createAdmin
 
 创建成功后登录可以在/admin进行管理。
 
+### 重置流量
+
+```
+php xcat resetTraffic
+```
