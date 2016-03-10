@@ -43,3 +43,10 @@ php xcat createAdmin
 ```
 php xcat resetTraffic
 ```
+
+
+### 发送流量使用情况邮件
+
+```
+php xcat sendDiaryMail
+```
