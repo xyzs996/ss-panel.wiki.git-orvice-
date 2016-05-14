@@ -11,7 +11,7 @@ vim .env
 
 ss-panel v3支持多种存储用户认证信息的方式：
 
-* cookie 同v2的认证方式，不推荐。 
+* file 使用文件存储sessions。 
 * redis 使用Redis存储，推荐此方式。
 
 推荐使用redis
