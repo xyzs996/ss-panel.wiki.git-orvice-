@@ -19,5 +19,25 @@ api根据http code来判断返回情况。
 
 ### 授权
 
-在
+在请求的Header携带Token
+
+curl表示为:
+
+```
+curl -X GET -H "Token: MY_TOKEN"  "http://loli.xxx/mu/v2/"
+```
+
+pytheon大概是这样写：
+```
+conn = http.client.HTTPConnection("loli.xxx")
+
+headers = {
+    'Token': "MY_TOKEN" 
+    }
+
+conn.request("GET", "/mu/v2/", headers=headers)
+
+res = conn.getresponse()
+data = res.read()
+```
 
