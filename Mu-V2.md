@@ -41,3 +41,79 @@ res = conn.getresponse()
 data = res.read()
 ```
 
+
+### 接口
+
+#### GET /users
+
+返回值大概是这样
+```
+{
+    "msg": "ok",
+    "data": [
+        {
+            "id": 1,
+            "passwd": "123gxopp",
+            "t": 1463581379,
+            "u": 2048,
+            "d": 2048,
+            "transfer_enable": 23166189568,
+            "port": 21567,
+            "switch": 1,
+            "enable": 1,
+            "method": "rc4-md5"
+        },
+        {
+            "id": 1,
+            "passwd": "123gxopp",
+            "t": 1463581379,
+            "u": 2048,
+            "d": 2048,
+            "transfer_enable": 23166189568,
+            "port": 21567,
+            "switch": 1,
+            "enable": 1,
+            "method": "rc4-md5"
+        }
+    ]
+}
+```
+
+#### POST /users/{id}/traffic
+
+{id} 为 /users 接口中返回的id
+
+更新流量post以下数据:
+
+* u  上传流量
+* d  下载流量
+* node_id 节点id
+
+curl example:
+```
+curl -X POST -H "Token: MY_TOKEN" -H "Cache-Control: no-cache"  -H "Content-Type: application/x-www-form-urlencoded" -d 'u=1024&d=1024&node_id=1' "http://loli.xxx/mu/v2/users/1/traffic"
+```
+
+python3 example:
+
+```
+import http.client
+
+conn = http.client.HTTPConnection("loli.xxx")
+
+payload = "u=1024&d=1024&node_id=1"
+
+headers = {
+    'Token': "MY_TOKEN",
+    'cache-control': "no-cache", 
+    'content-type': "application/x-www-form-urlencoded"
+    }
+
+conn.request("POST", "/mu/v2/users/1/traffic", payload, headers)
+
+res = conn.getresponse()
+data = res.read()
+
+print(data.decode("utf-8"))
+```
+
