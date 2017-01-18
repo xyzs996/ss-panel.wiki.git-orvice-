@@ -4,8 +4,10 @@
 
 这里以ss-panel下载至/home/www/ss-panel目录为例
 
+```
 cd /home/www
 git clone https://github.com/orvice/ss-panel.git 
+```
 
 ### 路径配置
 
